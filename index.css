@@ -1,0 +1,36 @@
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    
+    color: white;
+    display: none;
+    padding: 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+}
+/* Style each tab content individually */ 
+#London {background-image: url(assets/1.jpg);}
+#Paris {background-image: url(assets/2.png);}
+#Tokyo {background-image: url(assets/css.jpg);}
+#Oslo {background-image: url(assets/css.jpg);}
