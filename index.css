@@ -1,46 +1,63 @@
 body, html {
   height: 100%;
 }
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
 
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
 
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  
+  background: #f9f9f9;
+}
 
-.bg-image {
-  /* The image used */
+a {
+  color: #888;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #333;
+}
+/*.bg-image {
+  
   background-image: url("assets/1.jpg");
 
-  /* Add the blur effect */
   filter: blur(8px);
   -webkit-filter: blur(8px);
 
-  /* Full height */
+ 
   height: 100%; 
 
-  /* Center and scale the image nicely */
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
 }
+*/
 
 /* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+/*.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0); 
   color: white;
   font-weight: bold;
-  border: 3px solid #f1f1f1;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
-  width: 75%;
+  width: 100%;
   font-size: 35px;
-  padding: 30px ;
   text-align: center;
   transition: 0.5s;
   box-sizing: border-box;
-}
+
+}*/
+
+/*
 .bg-texted{
   color: white;
   font-weight: bold;
@@ -65,8 +82,8 @@ body, html {
   font-size: 150%;
 
   color: red;
-}
-.bg-texted1{
+}*/
+/*.bg-texted1{
   color: white;
   font-weight: bold;
   position: absolute;
@@ -81,8 +98,8 @@ body, html {
   text-align: center;
   transition: 1s;
   opacity: 0.5;
-}
-.bg-texted1:hover{
+}*/
+/*.bg-texted1:hover{
   opacity: 1;
   width: 100%;
   height:70%;
@@ -90,4 +107,128 @@ body, html {
   font-size: 150%;
 
   color: red;
+}*/
+.Top{
+  display: inline-block;
+  margin-bottom: 0px;
+  color: white;
+  font-family: sans-serif;
+  margin: auto;
+  margin-top: 5%;
+  font-size: 70px;
+}
+.grid {
+  padding: 30px 30px 30px 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 4%;
+  list-style: none;
+  text-align: center;
+  /*border:2px solid white;*/
+  width: fit-content;
+  /*background-color: rgba(0,0,0, 0.8);*/
+  font-size: 20px;
+}
+
+.grid li {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  margin: 0;
+ 
+  text-align: left;
+  position: relative;
+}
+
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #2c3f52;
+  color: #ed4e6e;
+}
+
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.grid figcaption span:before {
+  content: 'by ';
+}
+
+.grid figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+}
+
+/* Individual Caption Styles */
+
+/* Caption Style 1 */
+.cs-style-1 figcaption {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.no-touch .cs-style-1 figure:hover figcaption,
+.cs-style-1 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translate(15px, 15px);
+  -moz-transform: translate(15px, 15px);
+  -ms-transform: translate(15px, 15px);
+  transform: translate(15px, 15px);
+  border:2px solid white;
+}
+
+.cs-style-1 figcaption h3 {
+  margin-top: 70px;
+}
+
+.cs-style-1 figcaption span {
+  display: block;
+}
+
+.cs-style-1 figcaption a {
+  margin-top: 40px;
+}
+
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("assets/1.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
