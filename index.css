@@ -4,6 +4,40 @@ body, html {
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
+  .parallax { 
+      /* The image used */
+      background-image: url("assets/b3.jpg");
+
+      /* Full height */
+      height: 100%; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+    .parallax2 { 
+    /* The image used */
+    background-image: url("assets/b5.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
@@ -109,11 +143,10 @@ a:active {
   color: red;
 }*/
 .Top{
-  display: inline-block;
+  display: inline;
   margin-bottom: 0px;
-  color: white;
+  color: black;
   font-family: sans-serif;
-  margin: auto;
   margin-top: 5%;
   font-size: 70px;
 }
@@ -122,6 +155,7 @@ a:active {
   max-width: 1300px;
   margin: 0 auto;
   margin-top: 4%;
+  margin-left: 30%;
   list-style: none;
   text-align: center;
   /*border:2px solid white;*/
@@ -217,18 +251,3 @@ a:active {
   margin-top: 40px;
 }
 
-
-
-.parallax { 
-    /* The image used */
-    background-image: url("assets/1.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
